@@ -4,7 +4,9 @@ An open banking protocol built on APTOS.
 
 ## Project Links
 
-https://github.com/yeap-finance?view_as=public
+- contract interface: https://github.com/yeap-finance/yeap-finance-contract-interface
+- frontend: https://github.com/yeap-finance/yeap-finace-frontend-public
+- org: https://github.com/yeap-finance?view_as=public
 
 ## Slide
 
