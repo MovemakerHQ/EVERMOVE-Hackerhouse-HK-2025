@@ -6,7 +6,7 @@
 
 demo视频：https://youtu.be/H2sBP64GkKI
 
-demo网站：https://alllin-bet-lysrain21s-projects.vercel.app/
+demo网站：https://allin-bet-iota.vercel.app/
 
 ## 项目概述
 
