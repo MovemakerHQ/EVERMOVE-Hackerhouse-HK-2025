@@ -1,3 +1,5 @@
+# CyreneAI Github Repo (https://github.com/ashwin1527/ashwin_cyreneai)
+
 # CyreneAI — Distributed Digital System Framework
 
 CyreneAI enables users to create and operate persistent, autonomous digital systems by using a global network of contributor-run devices. It removes the need for centralized cloud services and reduces hosting costs by over 70%.
