@@ -20,7 +20,7 @@ Open your terminal and run the following command:
 
 ```bash
 sudo bash <(curl -s https://raw.githubusercontent.com/NetSepio/erebrus/node_installer/install-node.sh)
-
+```
 ### 🛠️ Setup Instructions
 
 1. Follow the on-screen prompts to install dependencies.  
@@ -28,7 +28,7 @@ sudo bash <(curl -s https://raw.githubusercontent.com/NetSepio/erebrus/node_inst
 3. Set parameters like machine name, location, and contribution limits.  
 4. Once configured, your machine will start participating in the **Erebrus compute network**.
 
----
+
 
 ### CyreneAI Framework
 
