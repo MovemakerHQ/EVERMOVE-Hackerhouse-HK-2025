@@ -6,6 +6,8 @@
 
 [Vedio](https://drive.google.com/drive/folders/1lWrlIhZkqs56Hmn_e1WfabuAy_3beQeC?usp=drive_link)
 
+[Github](https://github.com/Buidl-Land/Buidl-Land)
+
 ## 1. 项目概述
 
 我们不仅仅是在构建一个平台，我们是在**点燃一场革命**！Buidl Land 将成为一个**充满激情与创造力的数字城邦**，在这里，**人类的智慧与AI**将以前所未有的方式融合，共同孕育、打造真正**有价值、有意义、改变世界**的Web3项目和社区！
