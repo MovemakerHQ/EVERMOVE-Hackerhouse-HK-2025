@@ -13,3 +13,5 @@ Triple Protocol is a Derivatives Protocol based on Aptos, including Move contrac
 
 ## Repository
 [Github](https://github.com/TriplexProtocol)
+
+[canva](https://www.canva.com/design/DAGjrUpTTJg/bZoiSUmpC_gA92b0IVL63Q/edit?utm_content=DAGjrUpTTJg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
