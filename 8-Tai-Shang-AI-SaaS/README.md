@@ -3,10 +3,9 @@
 > Video: http://youtube.com/watch?v=mexyETN1W-Y
 >
 > Deck: https://pitch.com/v/team08_deck_taishang-ai-q83rfw
-> 
 >
-> Move Portal: https://aptos.ai-saas.rootmud.xyz/
->
+> Demo: https://aptos.ai-saas.rootmud.xyz/
+
 > Frontend Repos: 
 >
 > https://github.com/NonceGeek/ai-saas-portal-move
