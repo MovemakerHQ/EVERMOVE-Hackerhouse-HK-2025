@@ -1,5 +1,5 @@
 export const ABI = {
-    "address": "0x00c8fb0e3ce86942c03e805675faaf00b631db504f3e4c99ab7e8bc457cae539",
+    "address": "0xfe2e4fc00ec0bb98e4c774bbefc382a28f176c4af976bd41333741d7ca015fd4",
     "name": "allin_bet",
     "exposed_functions": [
         {
@@ -16,6 +16,22 @@ export const ABI = {
             "is_entry": true,
             "generic_type_params": [],
             "params": ["&signer", "address", "u64"],
+            "return": []
+        },
+        {
+            "name": "continue_game",
+            "visibility": "public",
+            "is_entry": true,
+            "generic_type_params": [],
+            "params": ["&signer", "address"],
+            "return": []
+        },
+        {
+            "name": "quit_game",
+            "visibility": "public",
+            "is_entry": true,
+            "generic_type_params": [],
+            "params": ["&signer", "address"],
             "return": []
         },
         {
@@ -43,6 +59,15 @@ export const ABI = {
             "generic_type_params": [],
             "params": [],
             "return": ["vector<address>"]
+        },
+        {
+            "name": "get_first_number",
+            "visibility": "public",
+            "is_entry": false,
+            "is_view": true,
+            "generic_type_params": [],
+            "params": ["address", "address"],
+            "return": ["u8"]
         }
     ]
 };
