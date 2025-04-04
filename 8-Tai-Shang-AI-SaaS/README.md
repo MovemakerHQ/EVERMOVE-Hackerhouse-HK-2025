@@ -1,15 +1,20 @@
 # Tai-Shang-AI-SaaS
 
-> Video: https://www.youtube.com/watch?v=faEpYqyMrig
+> Video: http://youtube.com/watch?v=mexyETN1W-Y
 >
 > Deck: https://pitch.com/v/team08_deck_taishang-ai-q83rfw
->
 > 
 >
-> Move Portal: https://ai-saas.rootmud.xyz/
+> Move Portal: https://aptos.ai-saas.rootmud.xyz/
 >
-> Move Portal Source Code: https://github.com/NonceGeek/ai-saas-portal-move
+> Frontend Repos: 
 >
-> MoveDID For AI Agent: [https://did.rootmud.xyz](https://did.rootmud.xyz/)
+> https://github.com/NonceGeek/ai-saas-portal-move
 >
-> MoveDID Source Code: https://github.com/NonceGeek/MoveDID
+> https://github.com/NonceGeek/ai-saas-portal-general
+> 
+> Backend Repo: https://github.com/NonceGeek/tai-shang-micro-ai-saas
+> 
+> MoveDID For AI Agent: https://aptos.did.rootmud.xyz/
+>
+> MoveDID Repo: https://github.com/NonceGeek/MoveDID
