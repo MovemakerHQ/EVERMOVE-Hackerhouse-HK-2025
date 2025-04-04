@@ -23,4 +23,4 @@ side projects
 
 ## Demo
 
-TODO: demo link and video link
+* <https://www.youtube.com/watch?v=Ze5UytUvLAQ>
