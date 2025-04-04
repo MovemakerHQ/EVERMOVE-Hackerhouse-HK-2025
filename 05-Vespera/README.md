@@ -4,7 +4,7 @@ Vespera is an innovative payment method designed to provide users with a more fl
 # Github link:
 https://github.com/SNDZIL/Vespera
 
-# Slide:
+# Slides:
 todo
 
 # Demo video:
