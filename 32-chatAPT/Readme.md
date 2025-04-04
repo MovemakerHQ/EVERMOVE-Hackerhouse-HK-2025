@@ -16,7 +16,8 @@
 
 | 代码库 | 链接 | 描述 |
 |-------|------|------|
-| 前端代码 | [https://github.com/web3woker0001/chatAPT) | 用户界面和交互逻辑 |
+| 前端代码 | (github)[https://github.com/web3woker0001/chatAPT] | 用户界面和交互逻辑 |
+| 合约代码 | (github)[https://github.com/TapInVentures/CharAptAptosContractor] | 合约代码 ｜
 
 ### 项目演示
 
