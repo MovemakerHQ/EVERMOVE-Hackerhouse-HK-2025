@@ -4,6 +4,10 @@
 
 项目地址：https://github.com/lysrain21/Allin_bet.git
 
+demo视频：https://youtu.be/H2sBP64GkKI
+
+demo网站：https://alllin-bet-lysrain21s-projects.vercel.app/
+
 ## 项目概述
 
 Allin Bet是一个运行在Aptos区块链上的投注游戏平台，通过智能合约确保游戏的公平性和透明度。用户可以创建游戏池，设置入场费和奖励规则，其他用户可以自由加入游戏并参与投注。
