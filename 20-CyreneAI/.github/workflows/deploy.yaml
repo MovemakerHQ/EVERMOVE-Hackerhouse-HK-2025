@@ -1,0 +1,87 @@
+name: Build & Deploy to Prod
+
+on:
+  push:
+    branches:
+      - prod  # Runs only when code is pushed to the `prod` branch
+
+jobs:
+  # 1️⃣ Build & Push Docker Image to GHCR
+  build-and-push:
+    name: Build & Push to GHCR
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write  # Required to push to GHCR
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry (GHCR)
+        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+
+      - name: Build Docker Image
+        run: |
+          docker build \
+            --build-arg API_BASE_URL="${{ secrets.API_BASE_URL }}" \
+            --build-arg MESSAGE_API_URL="${{ secrets.MESSAGE_API_URL }}" \
+            --build-arg CYRENE_AI_ID="${{ secrets.CYRENE_AI_ID }}" \
+            --build-arg TTS_API_URL="${{ secrets.TTS_API_URL }}" \
+            --build-arg MODEL_PROVIDER="${{ secrets.MODEL_PROVIDER }}" \
+            --build-arg OPENAI_API_KEY="${{ secrets.OPENAI_API_KEY }}" \
+            --build-arg NEXT_PUBLIC_PROJECT_ID="${{ secrets.NEXT_PUBLIC_PROJECT_ID }}" \
+            -t ghcr.io/netsepio/cyrene-web:prod .
+
+
+      - name: Push Docker Image to GHCR
+        run: docker push ghcr.io/netsepio/cyrene-web:prod
+
+  # 2️⃣ Deploy to Production Server via SSH
+  deploy:
+    name: Deploy to Production
+    needs: build-and-push  # Ensures deployment runs only after a successful build & push
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.PROD_REMOTE_SERVER_ADDRESS }}
+          username: ${{ secrets.PROD_SERVER_USERNAME }}
+          key: ${{ secrets.PROD_REMOTE_SERVER_KEY }}
+          port: ${{ secrets.PROD_SSH_PORT }}
+          script: |
+            echo "📂 Navigating to home directory..."
+            cd ~
+
+            echo "🔑 Logging in to GitHub Container Registry (GHCR)..."
+            echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
+
+            echo "🚀 Pulling the latest production image..."
+            docker pull ghcr.io/netsepio/cyrene-web:prod
+
+            echo "🛑 Stopping and removing existing container (if running)..."
+            docker stop cyrene-web || true
+            docker rm cyrene-web || true
+
+            echo "🧹 Removing old images to free up space..."
+            docker system prune -f
+
+            echo "📄 Creating environment file..."
+            cat <<EOF > .env
+            API_BASE_URL=${{ secrets.API_BASE_URL }}
+            MESSAGE_API_URL=${{ secrets.MESSAGE_API_URL }}
+            CYRENE_AI_ID=${{ secrets.CYRENE_AI_ID }}
+            TTS_API_URL=${{ secrets.TTS_API_URL }}
+            MODEL_PROVIDER=${{ secrets.MODEL_PROVIDER }}
+            OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+            NEXT_PUBLIC_PROJECT_ID=${{ secrets.NEXT_PUBLIC_PROJECT_ID }}
+
+            EOF
+
+            echo "🐳 Running the new container..."
+            docker run --name cyrene-web --env-file .env --restart=always -p 9080:3000 -d ghcr.io/netsepio/cyrene-web:prod
+
+            echo "✅ Deployment complete!"
