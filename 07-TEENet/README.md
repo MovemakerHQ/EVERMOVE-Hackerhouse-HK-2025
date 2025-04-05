@@ -7,4 +7,4 @@ https://docs.google.com/presentation/d/1uBsC8RtmaiYU-G4tx2snjHvCyyr99arv/edit?us
 https://drive.google.com/file/d/11CrX4p3qFoZ-3wmhb-0xQbMv0rZzUvGm/view?usp=sharing
 
 ### Github 项目链接
-https://github.com/laalaguer/bridge-go-aptos/
+https://github.com/TEENet-io/bridge-go-aptos
