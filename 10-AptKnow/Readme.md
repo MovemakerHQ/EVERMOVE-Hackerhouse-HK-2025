@@ -7,6 +7,8 @@ https://github.com/FoeverA0/Echo-FE
 https://github.com/FoeverA0/Echo-BE
 ## ppt地址：
 https://www.canva.com/design/DAGjqvcY6QY/p4KcZk99zXtjIGYtWcke4Q/edit?utm_content=DAGjqvcY6QY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+## demo视频：
+https://www.youtube.com/watch?v=GGqabjQbzzw
 ## 项目特点
 
 - **Web3 集成**: 利用区块链技术实现数据的去中心化存储和访问控制。
