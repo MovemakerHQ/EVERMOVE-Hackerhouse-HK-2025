@@ -1,13 +1,15 @@
-# InfoHunter
+# 🤖 MYSTA(InfoHunter) for APTOS EVERMOVE HackerHouse HK
 
-## PPT
+MYSTA is the largest cross-platform data-sharing network, to unlock data value with AI Agent and APTOS.
 
-TODO
+## Slides Link
 
-## Demo
+https://docs.google.com/presentation/d/1wlyELGCB-9KmIok9481u1qDtzCPMH_8-xyLo3ZnV95c/edit?usp=sharing
 
-TODO
+## GitHub Link
 
-## GitHub
+https://github.com/Kevin-free/InfoHunter
 
-TODO
+## Demo Site
+
+https://www.mysta.ai/
